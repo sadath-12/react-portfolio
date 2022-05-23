@@ -136,6 +136,8 @@ const Main = () => {
 
 <Contact target="_blank" to={{pathname:"mailto:sadathsadu2002@gmail.com"}} >
     <motion.h3 
+    initial={{y:-200,transition:{type:"spring",duration:1.5,delay:1}}}
+    animate={{y:0,transition:{type:"spring",duration:1.5,delay:1}}}
     whileHover={{scale:1.1}}
     whileTap={{scale:0.9}}
 
@@ -144,22 +146,30 @@ const Main = () => {
 
 <BLOG to='/blog' >
     <motion.h3 
+         initial={{x:-200,transition:{type:"spring",duration:1.5,delay:1}}}
+    animate={{x:0,transition:{type:"spring",duration:1.5,delay:1}}}
     whileHover={{scale:1.1}}
     whileTap={{scale:0.9}}>BLOG</motion.h3>
 </BLOG>
 <WORK to='/work' click={click} >
     <motion.h3 
+        initial={{x:-200,transition:{type:"spring",duration:1.5,delay:1}}}
+    animate={{x:0,transition:{type:"spring",duration:1.5,delay:1}}}
     whileHover={{scale:1.1}}
     whileTap={{scale:0.9}}>WORK</motion.h3>
 </WORK>
 <BottomBar>
 <ABOUT to='/about' click={click} >
     <motion.h3 
+         initial={{y:-1500,transition:{type:"spring",duration:1.5,delay:1}}}
+    animate={{y:0,transition:{type:"spring",duration:1.5,delay:1}}}
     whileHover={{scale:1.1}}
     whileTap={{scale:0.9}}>About</motion.h3>
 </ABOUT>
-<SKILLS to='/work' >
+<SKILLS to='/skills' >
     <motion.h3 
+         initial={{y:-1500,transition:{type:"spring",duration:1.5,delay:1}}}
+    animate={{y:0,transition:{type:"spring",duration:1.5,delay:1}}}
     whileHover={{scale:1.1}}
     whileTap={{scale:0.9}}>Skills</motion.h3>
 </SKILLS>
